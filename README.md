@@ -1,6 +1,6 @@
-# YOLO-Fly-Detector
-Object detection project to detect flying speicies on yellow sticky traps, cooperation with Prof.Hen Kaisar.
-The data are 8 images labeld by professionals, and we try to automate the process by detection model.
+# YOLO-Insect-Detector
+Object detection project to detect Insect species on yellow sticky traps, cooperation with Prof.Hen Keisar.
+The data are 8 images labelled by professionals, and we try to automate the process by detection model.
 
 ![MainImage](yolo.png)
 
@@ -9,7 +9,7 @@ The data are 8 images labeld by professionals, and we try to automate the proces
 1. Put all the images and csv boxes file in ./hen_images/original/ folder.
 2. Undertand what your preferable slicing size and the Train/Val set ratio.
 3. Run 'python Organize_data.py -size 2048 -ratio 0.8' in your terminal.
-4. The Train Test in Yolo represantation will be saved in ./datasliced/ folder.
+4. The Train Test in Yolo representation will be saved in ./datasliced/ folder.
 
 After this you can visualize the images with the help of Draw_yolo:
 
@@ -29,7 +29,7 @@ After this you can visualize the images with the help of Draw_yolo:
 
 ### Train Yolo7
 1. cd yolo7
-2. Run from ./yolov7/ folder the comand : python train.py --img 320 --batch 4 --epochs 100 --data ../datasliced/data.yaml  --weights yolov7-e6e.pt --workers 1 --device 0 --name yolov7flyes --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/yolov7-e6e-custom.yaml
+2. Run from ./yolov7/ folder the command : python train.py --img 320 --batch 4 --epochs 100 --data ../datasliced/data.yaml  --weights yolov7-e6e.pt --workers 1 --device 0 --name yolov7flyes --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/yolov7-e6e-custom.yaml
 3. results of loss function and all the evaluation should be in ./yolov7/runs/train/experiment_number
 
 ### inference Yolo7:
