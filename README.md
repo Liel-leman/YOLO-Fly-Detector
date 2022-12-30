@@ -7,7 +7,7 @@ The data are 8 images labelled by professionals, and we try to automate the proc
 
 ### To generate the image slices:
 1. Put all the images and csv boxes file in ./hen_images/original/ folder.
-2. Undertand what your preferable slicing size and the Train/Val set ratio.
+2. Choose what your preferable slicing size and the Train/Val set ratio.
 3. Run 'python Organize_data.py -size 2048 -ratio 0.8' in your terminal.
 4. The Train Test in Yolo representation will be saved in ./datasliced/ folder.
 
