@@ -2,7 +2,7 @@
 Object detection project to detect flying speicies on yellow sticky traps, cooperation with Prof.Hen Kaisar.
 The data are 8 images labeld by professionals, and we try to automate the process by detection model.
 
-
+![My Image](yolo.jpg)
 
 
 ### To generate the image slices:
