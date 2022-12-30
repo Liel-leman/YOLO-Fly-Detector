@@ -9,7 +9,8 @@ The data are 8 images labelled by professionals, and we try to automate the proc
 1. Put all the images and csv boxes file in ./hen_images/original/ folder.
 2. Choose what your preferable slicing size and the Train/Val set ratio.
 3. Run 'python Organize_data.py -size 2048 -ratio 0.8' in your terminal.
-4. The Train Test in Yolo representation will be saved in ./datasliced/ folder.
+4. The code above will generate two folders: +yolo_representation(it will switch from coco to yolo representation of bounding boxes
++Second folder will be ./sliced images where the data will be sliced and splited acoordingly to the the choosen parameters.
 
 After this you can visualize the images with the help of Draw_yolo:
 
