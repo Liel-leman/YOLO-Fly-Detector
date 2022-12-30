@@ -42,4 +42,6 @@ Great thanks for:
 
 https://github.com/slanj/yolo-tiling - Tilling code
 
-https://github.com/waittim/draw-YOLO-box - Yolo visualization
+https://github.com/waittim/draw-YOLO-box - bounding box visualization
+
+https://github.com/WongKinYiu/yolov7 - Yolov7
