@@ -14,8 +14,8 @@ The data are 8 images labelled by professionals, and we try to automate the proc
 After this you can visualize the images with the help of Draw_yolo:
 
 ### To Draw the bounding boxes
-1. Put all of your raw images in `.Draw_yolo/raw_images/` folder.
-2. Put all of your annotation files(YOLO format txt) in `.Draw_yolo/labels/` folder.
+1. Put all of your raw images in `./Draw_yolo/raw_images/` folder.
+2. Put all of your annotation files(YOLO format txt) in `./Draw_yolo/labels/` folder.
 3. Write your class information into **classes.txt**.
 4. Run `python Draw_yolo/draw_box.py` in your terminal.
 5. The drawn bounding boxes images will be saved in ./Draw_yolo/save_image/ folder.
