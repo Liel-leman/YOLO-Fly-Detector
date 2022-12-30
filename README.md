@@ -39,5 +39,7 @@ After this you can visualize the images with the help of Draw_yolo:
 
 
 Great thanks for:
+
 https://github.com/slanj/yolo-tiling - tilling code
+
 https://github.com/waittim/draw-YOLO-box - Yolo visualization
