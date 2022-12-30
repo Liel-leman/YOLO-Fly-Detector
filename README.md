@@ -1,5 +1,5 @@
-# YOLO-Insect-Detector
-Object detection project to detect Insect species on yellow sticky traps, cooperation with Prof.Hen Keisar.
+# YOLOה7-Insect-Detector
+Yolov7 costume dataset object detection project to detect Insect species on yellow sticky traps, cooperation with Prof.Hen Keisar.
 The data are 8 images labelled by professionals, and we try to automate the process by detection model.
 
 ![MainImage](yolo.png)
