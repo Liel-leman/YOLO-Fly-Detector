@@ -36,3 +36,8 @@ After this you can visualize the images with the help of Draw_yolo:
 4. cd yolo7
 5. Run 'python detect.py --weights bestCostume.pt --conf 0.3 --img-size 1280 --source test.jpg --view-img --no-trac'
 6. The results should be in ./yolov7/runs/detect/experiment_number
+
+
+Great thanks for:
+https://github.com/slanj/yolo-tiling - tilling code
+https://github.com/waittim/draw-YOLO-box - Yolo visualization
