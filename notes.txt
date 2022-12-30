@@ -1,0 +1,33 @@
+### To generate the image slices:
+1. Put all the images and csv boxes file in ./hen_images/original/ folder.
+2. Undertand what your preferable slicing size and the Train/Val set ratio.
+3. Run 'python Organize_data.py -size 2048 -ratio 0.8' in your terminal.
+4. The Train Test in Yolo represantation will be saved in ./datasliced/ folder.
+
+After this you can visualize the images with the help of Draw_yolo:
+
+### To Draw the bounding boxes
+1. Put all of your raw images in `.Draw_yolo/raw_images/` folder.
+2. Put all of your annotation files(YOLO format txt) in `.Draw_yolo/labels/` folder.
+3. Write your class information into **classes.txt**.
+4. Run `python Draw_yolo/draw_box.py` in your terminal.
+5. The drawn bounding boxes images will be saved in ./Draw_yolo/save_image/ folder.
+
+
+### To Prepare Yolo7
+1. Clone Repository : 'git clone https://github.com/WongKinYiu/yolov7.git'
+2. Move ./Configurations/data.yaml file to ./datasliced/ folder.
+3. Move ./Configurations/yolov7-e6e-custom.yaml file to ./yolov7/cfg/training/ folder.
+4. Download pretrained Yolov7 model from : https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-e6e.pt and put it in ./yolov7/ folder.
+
+### Train Yolo7
+1. cd yolo7
+2. Run from ./yolov7/ folder the comand : python train.py --img 320 --batch 4 --epochs 100 --data ../datasliced/data.yaml  --weights yolov7-e6e.pt --workers 1 --device 0 --name yolov7flyes --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/yolov7-e6e-custom.yaml
+3. results of loss function and all the evaluation should be in ./yolov7/runs/train/experiment_number
+
+### inference Yolo7:
+4. cd yolo7
+5. Run 'python detect.py --weights bestCostume.pt --conf 0.3 --img-size 1280 --source test.jpg --view-img --no-trac'
+6. The results should be in ./yolov7/runs/detect/experiment_number
+
+

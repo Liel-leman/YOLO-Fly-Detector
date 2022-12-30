@@ -1,0 +1,5 @@
+train: ../flyes/train/images
+val: ../flyes/val/images
+
+nc: 1
+names: ['fly']
