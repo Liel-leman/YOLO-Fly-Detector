@@ -30,7 +30,8 @@ After this you can visualize the images with the help of Draw_yolo:
 
 ### Train Yolo7
 1. cd yolo7
-2. Run from ./yolov7/ folder the command : python train.py --img 320 --batch 4 --epochs 100 --data ../datasliced/data.yaml  --weights yolov7-e6e.pt --workers 1 --device 0 --name yolov7flyes --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/yolov7-e6e-custom.yaml
+2. Run from ./yolov7/ folder the command : 
+    python train.py --img 320 --batch 4 --epochs 100 --data ../datasliced/data.yaml  --weights yolov7-e6e.pt --workers 1 --device 0 --name yolov7flyes --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/yolov7-e6e-custom.yaml
 3. results of loss function and all the evaluation should be in ./yolov7/runs/train/experiment_number
 
 ### inference Yolo7:
